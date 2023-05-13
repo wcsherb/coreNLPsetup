@@ -9,7 +9,8 @@
 #' @examples
 #' coreNLP_loc()
 coreNLP_loc <- function(version = coreNLPsetup::coreNLP_version){
-    file.path(strsplit(getwd(), "(/|\\\\)+")[[1]][1], version)
+    # file.path(strsplit(getwd(), "(/|\\\\)+")[[1]][1], version)
+    file.path(getwd(),version)
 }
 
 #' @rdname coreNLP_loc
