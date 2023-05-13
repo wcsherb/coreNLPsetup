@@ -39,6 +39,7 @@ check_stanford_installed <- function(stanford = coreNLPsetup::coreNLP_loc(),
 
         temp <- tempdir()
         dest <- file.path(temp, basename(download))
+        options(timeout = 5 * 60)
         utils::download.file(download, dest)
         utils::unzip(dest, exdir = temp)
         stan <- gsub("\\.zip$", "", dest)
