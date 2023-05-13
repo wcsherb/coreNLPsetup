@@ -6,6 +6,7 @@
 #' @references \url{http://stanfordnlp.github.io/CoreNLP/index.html#download}
 #' @examples
 #' coreNLP_version
-coreNLP_version <- 'stanford-corenlp-full-2017-06-09'
+# coreNLP_version <- 'stanford-corenlp-full-2017-06-09'
+coreNLP_version <- 'stanford-corenlp-4.5.4'
 
 
