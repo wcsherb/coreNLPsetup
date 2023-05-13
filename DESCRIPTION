@@ -1,6 +1,6 @@
 Package: coreNLPsetup
 Title: A Set of Tools to Ensure Proper Setup of Stanford's CoreNLP
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Tyler", "Rinker", email =
         "tyler.rinker@gmail.com", role = c("aut", "cre")))
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
