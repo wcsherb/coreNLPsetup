@@ -27,7 +27,8 @@ check_java <- function(verbose = TRUE){
 
 check_java_version <- function(min.ver = coreNLPsetup::java_version, verbose = TRUE){
     if (isTRUE(verbose)) message("\nchecking minimal Java version...\n")
-    java <- try(system("java -version", intern = TRUE))
+    try(system("java -version", intern = TRUE))
+    java <- readLine(prompt="Enter Version Number: ")
     ver <- qdapRegex::rm_between(java, '"', '"', extract=TRUE)[[1]]
     numeric_version(gsub("_", "-", ver)) > min.ver
 }
